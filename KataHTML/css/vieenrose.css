@@ -1,0 +1,113 @@
+body,html{
+    height: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;/*to horizontal scroll*/
+    height: 8px;/*to vertical scroll*/
+    border-radius: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    background-image: linear-gradient(0deg, pink, rgb(247, 226, 230)) !important;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    background-color: #1b96f1 !important;
+  }
+  
+
+.text-white{
+    color: white;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-cake{
+    color: rgb(192, 133, 143);
+}
+
+.bg{
+    background-image: url("../resources/img/background-landing-page2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.img-rounded{
+    border-radius: 50%;
+}
+
+.nav-title{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-family:'Dancing Script', cursive;
+}
+
+
+
+.nav-link{
+    font-family:'Dancing Script', cursive;
+    color: #302504;
+}
+
+/*Cuando se pasa por los items del menu principal*/
+.nav-link:hover{
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-link.active{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.body-slogan-title{
+    font-family:'Dancing Script', cursive;
+    color: white;   
+    font-weight: bold;
+    font-size: 500%; 
+}
+
+
+.body-slogan-description{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;   
+    font-weight: lighter;
+    font-size: 80%; 
+    text-align: end;
+    margin-left: 2em;
+}
+.body-slogan-description > span{
+    font-weight: bold ;
+    color: white;
+    font-style: italic;
+}
+  
+
+.footer-contact{
+    margin-left: 10px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    text-align: end;
+    font-family:'Dancing Script', cursive;
+}

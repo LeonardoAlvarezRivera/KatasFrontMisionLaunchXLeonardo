@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            <meta http-equiv="Expires" content="0" />
+            
+            <title>Pâtisserie "Vie En Rose"</title>
+            <link rel="icon" href="resources/img/patisserie-logo.jpg" type="image/x-icon">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+            <!--Estilos de bootstrap-->
+            <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="bootstrap-5.0.2-dist/css/">
+        
+            <!--Scripts de boostrap-->
+            <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
+            <!--Mis estilos-->
+            <link href="css/vieenrose.css" rel="stylesheet">
+            <link href="css/subpages.css" rel="stylesheet">
+
+         
+
+           
+    </head>
+    <body class="bg-pasteles">
+        <div id="modal-shopping-cart" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title cursive">Realizar orden</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                <div class="modal-body">
+
+                    <div class="modal-lg modal-dialog-scrollable wrapple">
+                       
+                            <div class="row">
+                                <h5 class="modal-subtitle ">Datos de entrega</h5>
+                                <hr>
+                            </div>
+
+                            <div class="container my-4">
+                                <div class="row">
+                                    <div class="col-sm-6 wrapple mb-3">
+                                        <input type="text" class="input-cart" name="nombre" placeholder="Nombre" required>
+                                    </div>
+    
+                                    <div class="col-sm-6 wrapple mb-3">
+                                        <input type="text" class="input-cart" name="nombre" placeholder="Apellidos" required>
+                                    </div>
+    
+                                    <div class="col-sm-6 wrapple mb-3">
+                                        <input type="email" class="input-cart" name="nombre" placeholder="Email" required>
+                                    </div>
+    
+                                    <div class="col-sm-6 wrapple mb-3">
+                                        <input type="tel"  class="input-cart" name="nombre" placeholder="Telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                        <br><small class="input-example-label">Ej: 123-456-7890</small>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <h5 class="modal-subtitle ">Carrito</h5>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card mb-3" >
+                                        <div class="row g-0">
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img  src="resources/img/pastel1.jpg" class="img-fluid img-cake-details-cart " alt="...">
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title cursive">Bûche de Noël</h5>
+                                                    <p class="card-text cake-description-cart">Es el postre emblemático de Francia para compartir con la familia en estas fechas. Se remonta a la tradición precristiana de quemar en el hogar un tronco o leño grande de madera, para celebrar el solsticio de invierno y el fuego nuevo del año a punto de empezar, así como alejar la oscuridad.</p>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h2 class="cake-option-title-cart">2 Sabores</h2>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                                    <h2 class="cake-option-title-cart"> 3 Adornos</h2>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                        
+                                                    <div class="row">
+                                                        <hr>
+                                                        <div class="col-sm-12 d-flex justify-content-end align-items-end">
+                                                            <span>Total Pieza 380.00 MXN</span>
+                                                
+                                                        </div>
+                                            
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card mb-3" >
+                                        <div class="row g-0">
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img  src="resources/img/pastel2.jpeg" class="img-fluid img-cake-details-cart " alt="...">
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title cursive">Bûche de Noël</h5>
+                                                    <p class="card-text cake-description-cart">Es el postre emblemático de Francia para compartir con la familia en estas fechas. Se remonta a la tradición precristiana de quemar en el hogar un tronco o leño grande de madera, para celebrar el solsticio de invierno y el fuego nuevo del año a punto de empezar, así como alejar la oscuridad.</p>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h2 class="cake-option-title-cart">2 Sabores</h2>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                           
+                                                                    <h2 class="cake-option-title-cart"> 3 Adornos</h2>
+                                                               
+                                                    
+                                                        </div>
+                                                    </div>
+                                                        
+                                                        
+                                                    <div class="row">
+                                                        <hr>
+                                                        <div class="col-sm-12 d-flex justify-content-end align-items-end">
+                                                            <span>Total Pieza 380.00 MXN</span>
+                                                
+                                                        </div>
+                                            
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card mb-3" >
+                                        <div class="row g-0">
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                                <img  src="resources/img/pastel3.jpeg" class="img-fluid img-cake-details-cart " alt="...">
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title cursive">Bûche de Noël</h5>
+                                                    <p class="card-text cake-description-cart">Es el postre emblemático de Francia para compartir con la familia en estas fechas. Se remonta a la tradición precristiana de quemar en el hogar un tronco o leño grande de madera, para celebrar el solsticio de invierno y el fuego nuevo del año a punto de empezar, así como alejar la oscuridad.</p>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <h2 class="cake-option-title-cart">2 Sabores</h2>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                          
+                                                                    <h2 class="cake-option-title-cart"> 3 Adornos</h2>
+                                                             
+                                                    
+                                                        </div>
+                                                    </div>
+                                                        
+                                                        
+                                                    <div class="row">
+                                                        <hr>
+                                                        <div class="col-sm-12 d-flex justify-content-end align-items-end">
+                                                            <span>Total Pieza 380.00 MXN</span>
+                                                
+                                                        </div>
+                                            
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                       
+                    </div>
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex justify-content-start align-items-start">
+                            <p class="cursive">Total a Pagar 1,140 MXN</p>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end align-items-end">
+                            <button type="submit" class="btn btn-add-patisserie" >Ordenar</button>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div id="modal-decorations" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title cursive">Selección de decoración</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog-scrollable">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card mb-3" >
+                                    <div class="row g-0">
+
+                                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                            <img  src="resources/img/adorno1.jpeg" class="img-fluid img-cake-details-cart " alt="...">
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title cursive">Corazon de Oro</h5>
+                                                <p class="card-text cake-description-cart">Adorno de corazon color oro de tamaño de 5cm x 5cm comestible sabor vainilla</p>
+       
+                                                <div class="row">
+                                                    <div class="form-check form-switch ms-3">
+                                                        <input class="form-check-input switch-pink" type="checkbox" id="flexSwitchCheckDefault">
+                                                        <label class="cake-option-title" for="flexSwitchCheckDefault">Agregar......5 MXN</label>
+                                                        
+                                                      </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="card mb-3" >
+                                    <div class="row g-0">
+
+                                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                            <img  src="resources/img/mar-y-perlas.jpeg" class="img-fluid img-cake-details-cart " alt="...">
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title cursive">Mar y perlas</h5>
+                                                <p class="card-text cake-description-cart">Adorno de perlas de chocolate blanco y carocoles de fondant de vainilla</p>
+       
+                                                <div class="row">
+                                                    <div class="form-check form-switch ms-3">
+                                                        <input class="form-check-input switch-pink" type="checkbox" id="flexSwitchCheckDefault">
+                                                        <label class="cake-option-title" for="flexSwitchCheckDefault">Agregar......65 MXN</label>
+                                                        
+                                                      </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                            </div>
+
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-add-patisserie" data-bs-dismiss="modal">Guardar Cambios</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <header class="container d-flex flex-wrap justify-content-center py-3 mb-4">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img class="img-rounded" width="40" height="32" src="resources/img/patisserie-logo.jpg"/>
+                <span class="fs-4 nav-title-black">Vie En Rose</span>
+            </a>
+
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal-shopping-cart" id="btn-shopping-cart" class="d-flex align-items-center h-100 justify-content-center">
+                        <div class="mask-container me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3 text-black patisserie-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                            <div class="mask-right-top counter-cakes">4</div>
+                        </div>
+                        
+                    </a>
+                    
+                </li>
+                <li class="nav-item"><h1 class="nav-subtitle">Pasteles</h1></li>
+            </ul>
+        </header>
+
+        <section class="container cake-list">
+            <div class="row">
+                <h1 class="cake-type-title ">1 Selecciona tu pastel</h1>
+                <hr>
+            </div>
+            <div class=" list-row p-3">
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel1.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Bûche de Noël</h5>
+                                <h5 class=" card-title cake-item-price">300 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/postre2.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Noël à Paris</h5>
+                                <h5 class=" card-title cake-item-price">50 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel2.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">fleur rose</h5>
+                                <h5 class=" card-title cake-item-price">85 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel3.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Délice à La Fraise</h5>
+                                <h5 class=" card-title cake-item-price">60 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel4.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Macaron</h5>
+                                <h5 class=" card-title cake-item-price">15 MXN c/p</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel1.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Bûche de Noël</h5>
+                                <h5 class=" card-title cake-item-price">300 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/postre2.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Noël à Paris</h5>
+                                <h5 class=" card-title cake-item-price">50 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel2.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">fleur rose</h5>
+                                <h5 class=" card-title cake-item-price">85 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel3.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Délice à La Fraise</h5>
+                                <h5 class=" card-title cake-item-price">60 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel4.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Macaron</h5>
+                                <h5 class=" card-title cake-item-price">15 MXN c/p</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel1.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Bûche de Noël</h5>
+                                <h5 class=" card-title cake-item-price">300 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/postre2.jpg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Noël à Paris</h5>
+                                <h5 class=" card-title cake-item-price">50 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel2.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">fleur rose</h5>
+                                <h5 class=" card-title cake-item-price">85 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel3.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Délice à La Fraise</h5>
+                                <h5 class=" card-title cake-item-price">60 MXN</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card cake-item me-3 p-0">
+                    <div class="mask-container">
+                        <img src="resources/img/pastel4.jpeg" class="img-fluid img-cake-item" alt="...">
+
+                        <div class="mask d-flex justify-content-center align-items-center">
+                            <div >
+                                <h5 class=" card-title cake-item-name cursive">Macaron</h5>
+                                <h5 class=" card-title cake-item-price">15 MXN c/p</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>       
+        </section>
+
+        <section class="container pb-3 cake-details">
+            
+
+            <div class="row">
+                <h1 class="cake-type-title">2 Personaliza tu pastel</h1>
+                <hr>
+            </div>
+            <div class="row row-cols-12 row-cols-md-12 g-4">
+                <div class="col">
+                    <div class="card mb-3" >
+                        <div class="row g-0">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img  src="resources/img/pastel1.jpg" class="img-fluid img-cake-details " alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title cursive">Bûche de Noël</h5>
+                                <p class="card-text cake-description">Es el postre emblemático de Francia para compartir con la familia en estas fechas. Se remonta a la tradición precristiana de quemar en el hogar un tronco o leño grande de madera, para celebrar el solsticio de invierno y el fuego nuevo del año a punto de empezar, así como alejar la oscuridad.</p>
+                                
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="cake-option-title">Sabores</h2>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item cake-description"><input type="checkbox" id="75Cacao" name="cake_buchenoel" value="75Cacao"> Fresa</li>
+                                        <li class="list-group-item cake-description"><input type="checkbox" id="100Cacao" name="cake_buchenoel" value="100Cacao"> Frambruesa</li>
+                                        <li class="list-group-item cake-description"><input type="checkbox" id="chocolateWhite" name="cake_buchenoel" value="chocolateWhite"> Chocolate blanco</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-7 ">
+                                            <h2 class="cake-option-title">Adornos</h2>
+                                        </div>
+                                        <div class="col-sm-5 d-flex align-items-end justify-content-end">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-decorations" class=" btn btn-add-adorno ">+ Adorno</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item cake-description">Estrella Navideña......25 MXN</li>
+                                        <li class="list-group-item cake-description">Campana de Chocolate...25 MXN</li>
+                                        <li class="list-group-item cake-description">Reno de caramelo.......30 MXN</li>
+                                    </ul>
+                                </div>
+                            </div>
+                                
+                                
+                                <div class="row">
+                                    <hr>
+                                    <div class="col-sm-7">
+                                        <span>380.00 MXN</span>
+                                        <h5 class="cake-num-adornos">+ 3 adornos incluidos</h5>
+                                    </div>
+                                    <div class="col-sm-5 d-flex justify-content-end align-items-end">
+                                        <a href="#" class="card-link btn btn-add-patisserie ">Agregar al carrito</a>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                </div>
+            
+            </div>
+
+            
+        </section>
+    
+        <script src="js/modals.js"></script>
+    </body>
+</html>
